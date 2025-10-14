@@ -1,0 +1,15 @@
+{
+  // Sets Ruff as the default formatter for Python files
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+
+  // Optional: Enable format on save for all files
+  // Ruff will only act on Python files due to the setting above.
+  "editor.formatOnSave": true,
+
+  // Optional: If you want Ruff to fix linting errors on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  }
+}
