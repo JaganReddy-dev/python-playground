@@ -19,6 +19,14 @@ def fun():
     print(f"hey from newList slice: {newList[2:4]}")
     let.append("moo")
     let[0] = "That"
+    listNone = [None]
+    k = [1, True, "String Here!"]
+    k.append(7.6)
+    k.append(2 + 3j)
+    print(k)
+    names = ["Jane", "Adam", "Ryan", "Bob", "Zordon", "Jack", "Jackenzie"]
+    names.sort()
+    print(names)
 
     listSen = ""
 
