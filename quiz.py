@@ -5,7 +5,7 @@ instructions = "\nThis  quiz contains 5 questions that you need to answer\n\nYou
 print(instructions)
 
 playing = input("\nAre you ready to play the game? (Y/N) \n")
-if playing != "Y":
+if playing.upper() != "Y":
     quit()
 
 questions = [
@@ -35,7 +35,7 @@ index = 0
 while index < len(questions):
     print(f"\n{questions[index]}")
     userInput = input("Enter your response: ")
-    if userInput == answers[index]:
+    if userInput.lower() == answers[index].lower():
         correct += 1
         gotCorrect.append(questions[index])
     else:
@@ -47,7 +47,7 @@ while index < len(questions):
 
 print(f"✅ correct:  {correct}\n❌ incorrect: {incorrect}\n")
 check = input("Would you like to view what you got correct and wrong? (Y/N) \n")
-if check == "Y":
+if check.upper() == "Y":
     if gotCorrect and gotWrong:
         for right in gotCorrect:
             print(
