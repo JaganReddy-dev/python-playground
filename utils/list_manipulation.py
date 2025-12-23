@@ -21,3 +21,11 @@ def list_manipulation(lst: list) -> list:
         last_two_el,
         first_four_el,
     ]
+
+
+k = 12
+list_nums = [1, 2, 3, 4, 5]
+if len(list_nums) < k:
+    k = k % len(list_nums)
+print("list_nums k =")
+print(k)
