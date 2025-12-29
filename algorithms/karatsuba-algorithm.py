@@ -17,3 +17,9 @@ def karatsuba(x: int, y: int) -> int:
 
 
 print(karatsuba(1234, 5678))
+
+"""This algortihm divides the given numbers into two equal parts and then recursively calls itself to break down the numbers into single digits. 
+Once the numbers are single digits, the algorithm multiplies them and returns the result.
+we also calculate the ad + bc using efficient way by subtracting ac and bd from recurcively calling karatsuba(a + b, c + d)
+and then return the result which multiplies the ac by 10^2m, multiplies the ad + bc by 10^m and finally adds bd
+"""
